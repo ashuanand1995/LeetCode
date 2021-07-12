@@ -23,7 +23,7 @@ class Solution {
         
         //Stack<Integer> temp = new LinkedList<>();
         if(root == null){
-            return null;
+            return res;
         }
         res.add(root.val);        
         for(int i=0;i<root.children.size();i++){
