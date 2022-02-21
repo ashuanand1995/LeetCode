@@ -1,4 +1,4 @@
-///DP with Top-down approach
+///DP with bottom-up tabular approach
 class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
         int res = 0;
@@ -28,7 +28,7 @@ class Solution {
 
 }
 
-//DP with Memoization approach
+//DP with top-down Memoization approach
 class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
         int res = 0;
