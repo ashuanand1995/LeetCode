@@ -1,12 +1,13 @@
 class Solution {
     public int countSegments(String s) {
-        if(s==null) return 0;
-        if(s.length()==0) return 0;
         int ans = 0;
-        String[] strArr = s.split(" ");
-        for(String str : strArr){
-            if(!str.trim().isEmpty()) ans++;
+
+        for (int i = 0; i < s.length(); i++) {
+            if ((i == 0 || s.charAt(i-1) == ' ') && s.charAt(i) != ' ') {
+                ans++;
+            }
         }
+
         return ans;
     }
 }
