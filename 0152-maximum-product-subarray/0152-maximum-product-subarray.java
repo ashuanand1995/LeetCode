@@ -10,7 +10,6 @@ class Solution {
             currentProd = Math.max(Math.max(maxprod,minProd),nums[i]);
             currentMinProd = Math.min(Math.min(maxprod,minProd),nums[i]);
             res = Math.max(res,currentProd);
-            System.out.println("Res:"+res);
         }
         return res;
     }
